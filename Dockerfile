@@ -3,7 +3,6 @@ MAINTAINER sruthi
 LABEL This is to deploy python project
 WORKDIR /work
 COPY requirements.txt /work
-RUN apt -get update -y
 RUN pip install --no -cache -dir -r requirements.txt
 
 COPY  . /work/
