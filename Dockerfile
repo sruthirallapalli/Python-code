@@ -3,7 +3,8 @@ MAINTAINER sruthi
 LABEL This is to deploy python project
 WORKDIR /work
 COPY requirements.txt /work
-RUN pip install --no -cache -dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
 
 COPY  . /work/
 EXPOSE 5000
